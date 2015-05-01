@@ -5,6 +5,10 @@ angular.module('thumbsCheckApp')
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/demo', {
+        templateUrl: 'views/demo.html',
+        controller: 'DemoCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
